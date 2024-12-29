@@ -13,4 +13,5 @@ Tekniker och metoder som använts i skapandet av sidan
 - DOM manipulation
 - API
 - OOP
-
+--------------------------------------------
+Just för tillfället så fungerar inte kontaktformuläret via mailserver :D
