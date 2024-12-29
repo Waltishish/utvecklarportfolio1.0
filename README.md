@@ -1,6 +1,5 @@
 Utvecklar portfolio
 --------------------------------------------
-Beskrivning
 Detta project är en portfoliosida skapad med HTML, CSS och Javascript. 
 Syftet med sidan är att visa upp mina kunskaper samt mina projekt.
 
