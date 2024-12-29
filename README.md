@@ -13,4 +13,4 @@ Tekniker och metoder som använts i skapandet av sidan
 - API
 - OOP
 --------------------------------------------
-Just för tillfället så fungerar inte kontaktformuläret via mailserver :D
+Just för tillfället så fungerar inte kontaktformuläret men huvudsaken är att den finns :)
