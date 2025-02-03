@@ -1,4 +1,4 @@
-import { navbarData } from "../navbarData.js";
+import { navbarData } from "./navbarData.js";
 
 document.addEventListener('DOMContentLoaded', function() {
     function generateNavbar() {
