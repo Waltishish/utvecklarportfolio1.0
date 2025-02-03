@@ -1,4 +1,4 @@
-import { footerData } from "../js/footerData.js";
+import { footerData } from "../footerData.js";
 
 document.addEventListener('DOMContentLoaded', function() {
     function generateFooter() {
