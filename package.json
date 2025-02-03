@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -13,13 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Waltishish/utvecklarportfolio1.0/issues"
   },
-  "homepage": "https://github.com/Waltishish/utvecklarportfolio1.0#readme",
+  "homepage": "https://Waltishish.github.io/utvecklarportfolio1.0/",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "vite": "^6.0.11"
+    "vite": "^6.0.11",
+    "gh-pages": "^5.0.0"
   }
 }
+
