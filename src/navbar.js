@@ -1,21 +1,25 @@
 import { navbarData } from "./navbarData.js";
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     function generateNavbar() {
-        const navbarContainer = document.querySelector('.navbar-container');
+        const navbarContainer = document.querySelector(".navbar-container");
+        if (!navbarContainer) {
+            console.error("Navbar-container saknas i HTML");
+            return;
+        }
 
-        const leftList = document.createElement('ul');
-        const rightList = document.createElement('ul');
+        const leftList = document.createElement("ul");
+        const rightList = document.createElement("ul");
 
-        navbarData.forEach(item => {
-            const navItem = document.createElement('li');
-            const navLink = document.createElement('a');
+        navbarData.forEach((item) => {
+            const navItem = document.createElement("li");
+            const navLink = document.createElement("a");
 
             navLink.href = item.url;
-            navLink.textContent = item.name;
+            navLink.textContent = item.name || "";
 
             if (item.iconClass) {
-                const icon = document.createElement('i');
+                const icon = document.createElement("i");
                 icon.className = item.iconClass;
                 navLink.prepend(icon);
             }
@@ -29,22 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        navbarContainer.innerHTML = '';
+        navbarContainer.innerHTML = "";
         navbarContainer.appendChild(leftList);
         navbarContainer.appendChild(rightList);
 
-        leftList.classList.add('navbar-left');
-        rightList.classList.add('navbar-right');
+        leftList.classList.add("navbar-left");
+        rightList.classList.add("navbar-right");
     }
 
     generateNavbar();
 
-    const navbar = document.querySelector('.navbar-container');
-    window.addEventListener('scroll', function() {
+    const navbar = document.querySelector(".navbar-container");
+    window.addEventListener("scroll", function () {
         if (window.scrollY > 0) {
-            navbar.classList.add('sticky');
+            navbar.classList.add("sticky");
         } else {
-            navbar.classList.remove('sticky');
+            navbar.classList.remove("sticky");
         }
     });
 });
