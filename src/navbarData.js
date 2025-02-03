@@ -4,10 +4,6 @@ export const navbarData = [
         url: '/utvecklarportfolio1.0/index.html'
     },
     {
-        name: 'Projekt',
-        url: '/utvecklarportfolio1.0/projects.html'
-    },
-    {
         name: 'GitHub',
         url: 'https://github.com/Waltishish',
         iconClass: 'fab fa-github'
